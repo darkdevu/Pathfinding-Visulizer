@@ -1,0 +1,17 @@
+.Node {
+    height: 25px;
+    width: 25px;
+    outline: 1px solid rgb(175, 216, 248);
+}
+
+.start {
+    background-color: lightgreen;
+}
+
+.end {
+    background-color: rgb(212, 52, 52);
+}
+
+.wall {
+    background-color: rgb(56, 114, 240);
+}
