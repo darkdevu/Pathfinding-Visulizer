@@ -1,5 +1,5 @@
 {
-  "homepage": "https://karthikb777.github.io/Pathfinder",
+  "homepage": "",
   "name": "visualizer",
   "version": "0.1.0",
   "private": true,
@@ -41,5 +41,6 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
-  }
+  },
+  "homepage":"."
 }
