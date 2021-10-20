@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;    
+  font-weight: bold;
+  font-size: 22px;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  /* padding: 2px; */
+  margin-right: 2%;
+  color: rgb(0, 0, 0);
+}
+
+.subTitle {
+  font-size: 11px;
+  margin-left: 2px;
+  /* position: fixed;
+  top: 1%;
+  right: 1%; */
+  /* float: right; */
+}
+
+
+.navbar {
+    margin-bottom: 5px;
+}
+
+.btns {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 90%;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grid {
+    width: 100%;
+    position: absolute;
+    bottom: 0.1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+}
+
+button, a {
+    padding: 6px 2%;
+    background-color: rgb(52, 255, 204);
+    border: 2px solid rgb(52, 255, 204);
+    color: black;
+    font-size: 13px;
+    /* width: 30vh; */
+    /* background-color: rgb(0, 110, 255);
+    border: 2px solid rgb(0, 110, 255); */
+    border-radius: 5px;
+    margin-right: 8px;
+    /* color: rgb(255, 255, 255); */
+}
+
+a {
+  text-decoration: none;
+}
+
+.visualizeBtn {
+  background-color: rgb(52, 255, 204);
+  border: 2px solid rgb(52, 255, 204);
+  color: black;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.algoInfo {
+  position: absolute;
+  top: 5%;
+  right: 1%;
+  /* width: 100%;
+  text-align: center; */
+  padding-top: 15px;
+  font-size: 13px;
+  margin: auto;
+}
+
+.hint {
+  font-size: 12px;
+  color: gray;
+  float: right;
+}
+
+.selectAlgoHidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.selectAlgo {
+  position: absolute;
+  top: 8%;
+  left: 40%;
+  width: 30vh;
+  height: 14vh;
+  background-color: white;
+  box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  padding: 15px;
+  z-index: 2;
+  /* animation: menuAnim 1s ease-in 0.5s linear; */
+  /* visibility: hidden;
+  pointer-events: none; */
+}
+
+.selectAlgo ul {
+  cursor: pointer;
+}
+
+@keyframes menuAnim {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.info {
+  position: absolute;
+  top: 8%;
+  left: 1%;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info li {
+  list-style: none;
+  font-size: 12px;
+}
+
+.infoField {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoIcon {
+    border: 1px solid white;
+    width: 3vh;
+    height: 3vh;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.infoWall {
+  background-color: black;
+}
+
+.infoVisited {
+  background-color:rgb(0, 153, 255);
+}
+
+.infoPath {
+  background-color: rgb(255, 254, 106);
+}
+
+.infoSvg {
+  font-size: 15px;
+  background-color: white;
+}
+
+.node {
+    border: 1px solid white;
+    width: 3.5vh;
+    height: 3.5vh;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nodeDisplay {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 3.5vh;
+    height: 3.5vh;
+    /* background-color: rgb(231, 231, 231); */
+}
+
+.icon {
+    font-size: 70px;
+   position: relative;
+   top: 10%;
+   left: 25%;
+}
+
+.iconWeight {
+  font-size: 8px;
+}
+
+.visited {
+    background-color: rgb(0, 110, 255);
+    border: 0.5px solid rgb(255, 255, 255);
+
+    -webkit-animation: animation 750ms linear both;
+    animation: animation 750ms linear both;
+}
+
+.things {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 2px; */
+}
+
+.relaxed {
+    background-color: rgb(0, 110, 255);
+    border: 1px solid rgba(36, 36, 36, 0.541);
+    -webkit-animation: animation 750ms linear both;
+    animation: animation 750ms linear both;
+}
+
+.path {
+    background-color: yellow;
+    border: 1px solid yellow;
+    -webkit-animation: animation 750ms linear both;
+    animation: animation 750ms linear both;
+}
+
+.start {
+    background-color: brown;
+    -webkit-animation: animation 750ms linear both;
+    animation: animation 750ms linear both;
+}
+
+.end {
+    background-color: blue;
+    -webkit-animation: animation 750ms linear both;
+    animation: animation 750ms linear both;
+}
+
+.wall {
+    background-color: black;
+    border: 0.5px solid black;
+}
+
+
+  .node-visited {
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+  @keyframes visitedAnimation {
+    0% {
+      transform: scale(0.3);
+      background-color: rgba(0, 67, 167, 0.75);
+      border-radius: 50%;
+    }
+  
+    50% {
+      background-color: rgba(0, 247, 255, 0.75);
+      /* rgba(17, 104, 217, 0.75) */
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: rgb(0, 153, 255);
+    }
+  }
+
+  .node-shortest-path {
+    animation-name: shortestPath;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+  @keyframes shortestPath {
+    0% {
+      transform: scale(0.6);
+      background-color: rgb(255, 254, 106);
+    }
+  
+    50% {
+      transform: scale(1.2);
+      background-color: rgb(255, 254, 106);
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: rgb(255, 254, 106);
+    }
+  }
+
+  .helpAbout {
+    width: 90%;
+    margin: auto;
+  }
+
+  .helpAbout h4 {
+    font-size: 30px;
+  }
+
+  .logoAbout {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .steps {
+    margin-top: 30px;
+  }
+
+  .steps li {
+    margin: 20px;
+    list-style: none;
+  }
+
+  
+  
